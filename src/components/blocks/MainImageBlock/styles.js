@@ -1,4 +1,6 @@
 import styled from "styled-components";
+import FavoriteIcon from "@material-ui/icons/Favorite";
+import ShareOutlinedIcon from "@material-ui/icons/ShareOutlined";
 
 import virginHyperloopCover from "../../../assets/images/virginhyperloop-cover.jpg";
 
@@ -35,8 +37,8 @@ const LikesAndAvatars = styled.div`
 const MainImageContentWrapper = styled.div`
   display: flex;
   flex-direction: column;
-  padding: 50px;
-  height: calc(100% - 100px);
+  padding: 60px;
+  height: calc(100% - 120px);
 `;
 
 const CentredMainContent = styled.div`
@@ -79,6 +81,14 @@ const ButtonsWrapper = styled.div`
   gap: 10px;
 `;
 
+const FavoriteIconStyled = styled(FavoriteIcon)`
+  transform: scale(0.7);
+`;
+
+const ShareOutlinedIconStyled = styled(ShareOutlinedIcon)`
+  transform: scale(0.7);
+`;
+
 export {
   MainImageBlockContainer,
   MainImageBlockWrapper,
@@ -91,4 +101,6 @@ export {
   InfoText,
   BottomContent,
   ButtonsWrapper,
+  FavoriteIconStyled,
+  ShareOutlinedIconStyled,
 };

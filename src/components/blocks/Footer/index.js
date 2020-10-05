@@ -1,4 +1,5 @@
 import React from "react";
+import DateRangeIcon from "@material-ui/icons/DateRange";
 
 import { Badge } from "../Badge/index";
 import {
@@ -13,6 +14,8 @@ import {
   FollowList,
   SmLink,
   FollowUsText,
+  ComingSoonWrapper,
+  ComingSoonLink,
 } from "./styles";
 
 const array = [
@@ -36,8 +39,8 @@ export const Footer = () => {
               The awards from design, creativity and innovation on the internet
             </FooterText>
             <ListWithBadges>
-              {array.map((item) => (
-                <li>
+              {array.map((item, index) => (
+                <li key={index}>
                   <ItemWithBadge>
                     <StyledLink href="#">
                       {item.name}
@@ -52,14 +55,20 @@ export const Footer = () => {
             <div>
               <FollowUsText>Follow us</FollowUsText>
               <FollowList>
-                {smArray.map((item) => (
-                  <SmLink href="#">{item}</SmLink>
+                {smArray.map((item, index) => (
+                  <SmLink key={index} href="#">
+                    {item}
+                  </SmLink>
                 ))}
               </FollowList>
             </div>
           </LeftBlock>
           <RightBlock>
-            <FooterText>Next conferences Coming soon</FooterText>
+            <ComingSoonWrapper>
+              <FooterText>Next conferences</FooterText>
+              <DateRangeIcon />
+              <ComingSoonLink href="#">Coming soon</ComingSoonLink>
+            </ComingSoonWrapper>
           </RightBlock>
         </FooterContainer>
       </FooterWrapper>

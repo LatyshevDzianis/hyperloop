@@ -9,6 +9,7 @@ import {
 } from "./styles";
 import screen1 from "../../../assets/images/virginhyperloop-screen1.jpg";
 import screen2 from "../../../assets/images/virginhyperloop-screen2.jpg";
+import { VotesSection } from "../VotesSection/index";
 
 const array = ["Screenshots", "Jury votes", "Comments"];
 
@@ -17,8 +18,8 @@ export const NavigationSection = () => {
     <NavigationSectionWrapper>
       <NavigationSectionContainer>
         <UnorderedListStyled>
-          {array.map((item) => (
-            <li>
+          {array.map((item, index) => (
+            <li key={index}>
               <span>{item}</span>
             </li>
           ))}
@@ -27,6 +28,7 @@ export const NavigationSection = () => {
       <ImagesContainer>
         <ImageStyled src={screen1} />
         <ImageStyled src={screen2} />
+        <VotesSection>wefew</VotesSection>
       </ImagesContainer>
     </NavigationSectionWrapper>
   );

@@ -2,8 +2,8 @@ import styled from "styled-components";
 
 const AvatarImage = styled.img`
   object-fit: cover;
-  width: 35px;
-  height: 35px;
+  width: ${({ width }) => (width ? width : "35px")};
+  height: ${({ height }) => (height ? height : "35px")};
   border-radius: 50%;
 `;
 

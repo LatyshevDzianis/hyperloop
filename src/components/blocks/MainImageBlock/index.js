@@ -1,5 +1,6 @@
 import React from "react";
-import ShareOutlinedIcon from "@material-ui/icons/ShareOutlined";
+import ChevronLeftOutlinedIcon from "@material-ui/icons/ChevronLeftOutlined";
+import ChevronRightOutlinedIcon from "@material-ui/icons/ChevronRightOutlined";
 
 import { AvatarsList } from "../AvatarsList";
 import {
@@ -14,11 +15,14 @@ import {
   InfoText,
   BottomContent,
   ButtonsWrapper,
+  FavoriteIconStyled,
+  ShareOutlinedIconStyled,
 } from "./styles";
 import userImage from "../../../assets/images/user.jpg";
 import backgroundImage from "../../../assets/images/virginhyperloop-cover.jpg";
 import { OutlineButton } from "../../controls/OutlineButton";
 import { FilledButton } from "../../controls/FilledButton";
+import { RoundButton } from "../../controls/RoundButton";
 
 const avatars = [
   { image: userImage },
@@ -39,7 +43,10 @@ export const MainImageBlock = () => {
             </span>
             <LikesAndAvatars>
               <AvatarsList avatars={avatars} />
-              <OutlineButton>88</OutlineButton>
+              <OutlineButton>
+                <FavoriteIconStyled />
+                <span>88</span>
+              </OutlineButton>
               <OutlineButton>Collect</OutlineButton>
             </LikesAndAvatars>
           </DateAndAvatars>
@@ -54,11 +61,17 @@ export const MainImageBlock = () => {
           <BottomContent>
             <ButtonsWrapper>
               <FilledButton>Visit Site</FilledButton>
-              <OutlineButton>Share</OutlineButton>
+              <RoundButton>
+                <ShareOutlinedIconStyled />
+              </RoundButton>
             </ButtonsWrapper>
             <ButtonsWrapper>
-              <OutlineButton>Prev</OutlineButton>
-              <OutlineButton>Next</OutlineButton>
+              <RoundButton>
+                <ChevronLeftOutlinedIcon />
+              </RoundButton>
+              <RoundButton>
+                <ChevronRightOutlinedIcon />
+              </RoundButton>
             </ButtonsWrapper>
           </BottomContent>
         </MainImageContentWrapper>

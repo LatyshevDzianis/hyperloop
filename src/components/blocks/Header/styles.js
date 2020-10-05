@@ -38,4 +38,6 @@ const MenuText = styled.div`
   height: 100%;
 `;
 
-export { HeaderContainer, Menu, MenuContentWrapper, MenuText };
+const SvgWrapper = styled.div``;
+
+export { HeaderContainer, Menu, MenuContentWrapper, MenuText, SvgWrapper };

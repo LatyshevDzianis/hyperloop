@@ -31,8 +31,8 @@ export const DescriptionSection = () => {
         </DescriptionHeading>
         <ButtonsContainer>
           <ListStyled>
-            {array.map((item) => (
-              <ListItemStyled>
+            {array.map((item, index) => (
+              <ListItemStyled key={index}>
                 <OutlineButton color="black">{item}</OutlineButton>
               </ListItemStyled>
             ))}

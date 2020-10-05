@@ -8,6 +8,8 @@ const OutlineButtonStyled = styled.button`
   padding: 0 23px;
   height: 34px;
   transition: 0.3s;
+  display: flex;
+  align-items: center;
 
   :hover {
     color: #42ab9e;

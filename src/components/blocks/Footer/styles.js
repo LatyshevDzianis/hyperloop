@@ -31,11 +31,16 @@ const ListWithBadges = styled.ul`
   margin: 0 0 25px 0;
   padding: 0;
   font-size: 14px;
-  font-weight: bold;
+  font-weight: 500;
 
   > li {
     display: inline-block;
     margin-right: 25px;
+    transition: 0.3s;
+  }
+
+  > li :hover {
+    opacity: 0.75;
   }
 `;
 
@@ -56,12 +61,32 @@ const FollowList = styled(ListWithBadges)`
 const SmLink = styled(StyledLink)`
   display: inline;
   margin-right: 10px;
+  transition: 0.3s;
+
+  :hover {
+    color: #626363;
+  }
 `;
 
 const FollowUsText = styled.span`
   font-size: 14px;
   font-weight: bold;
   margin-right: 10px;
+`;
+
+const ComingSoonWrapper = styled.div`
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  gap: 5px;
+`;
+
+const ComingSoonLink = styled.a`
+  color: #202121;
+  font-weight: bold;
+  font-size: 18px;
+  text-decoration: none;
+  border-bottom: 1px solid #202121;
 `;
 
 export {
@@ -76,4 +101,6 @@ export {
   FollowList,
   SmLink,
   FollowUsText,
+  ComingSoonWrapper,
+  ComingSoonLink,
 };

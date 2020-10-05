@@ -6,6 +6,7 @@ import { MainImageBlock } from "./components/blocks/MainImageBlock";
 import { DescriptionSection } from "./components/blocks/DescriptionSection";
 import { NavigationSection } from "./components/blocks/NavigationSection";
 import { Footer } from "./components/blocks/Footer";
+import { SitesOfTheDay } from './components/blocks/SitesOfTheDay/index';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <MainImageBlock />
       <DescriptionSection />
       <NavigationSection />
+      <SitesOfTheDay />
       <Footer />
     </>
   );
