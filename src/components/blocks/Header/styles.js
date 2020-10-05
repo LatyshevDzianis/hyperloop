@@ -10,6 +10,7 @@ const HeaderContainer = styled.div`
   align-items: center;
   position: fixed;
   z-index: 10;
+  border-bottom: 1px solid #dedede;
 `;
 
 const Menu = styled.div`

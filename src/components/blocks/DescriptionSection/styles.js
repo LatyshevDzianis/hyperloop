@@ -26,6 +26,7 @@ const ButtonsContainer = styled.div`
 
 const ListStyled = styled.ul`
   padding: 0;
+  margin-bottom: 0;
   list-style: none;
 `;
 
