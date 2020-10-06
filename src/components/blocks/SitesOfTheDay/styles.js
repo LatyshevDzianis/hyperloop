@@ -3,6 +3,7 @@ import styled from "styled-components";
 const SitesOfTheDayWrapper = styled.div`
   max-width: 1905px;
   padding: 0 66px;
+  margin-bottom: 85px;
 `;
 
 const HeadingContainer = styled.div`
@@ -24,6 +25,7 @@ const RegularText = styled.span`
 const WinnerCardsContainer = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 35px;
   width: 100%;
 `;
 
