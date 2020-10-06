@@ -3,6 +3,7 @@ import FavoriteIcon from "@material-ui/icons/Favorite";
 import ShareOutlinedIcon from "@material-ui/icons/ShareOutlined";
 
 import virginHyperloopCover from "../../../assets/images/virginhyperloop-cover.jpg";
+import mobileImage from "../../../assets/images/mobile-main-pic.png";
 
 const MainImageBlockWrapper = styled.div`
   background: no-repeat url(${virginHyperloopCover});
@@ -11,6 +12,19 @@ const MainImageBlockWrapper = styled.div`
   position: relative;
   color: #fff;
   margin-top: 70px;
+
+  @media (max-width: 1024px) {
+    background-size: cover;
+    object-fit: cover;
+    height: 500px;
+  }
+
+  @media (max-width: 700px) {
+    background: no-repeat url(${mobileImage});
+    background-size: contain;
+    object-fit: contain;
+    height: unset;
+  }
 `;
 
 const MainImageBlockContainer = styled.div`
@@ -32,6 +46,10 @@ const LikesAndAvatars = styled.div`
   display: flex;
   align-items: center;
   gap: 10px;
+
+  @media (max-width: 1024px) {
+    display: none;
+  }
 `;
 
 const MainImageContentWrapper = styled.div`
@@ -56,9 +74,8 @@ const ProductHeader = styled.p`
 `;
 
 const InfoText = styled.p`
-  text-transform: uppercase;
   font-weight: 300;
-  font-size: 16px;
+  font-size: 15px;
 `;
 
 const TransparentImage = styled.img`
@@ -79,6 +96,10 @@ const BottomContent = styled.div`
 const ButtonsWrapper = styled.div`
   display: flex;
   gap: 10px;
+
+  @media (max-width: 1024px) {
+    display: none;
+  }
 `;
 
 const FavoriteIconStyled = styled(FavoriteIcon)`

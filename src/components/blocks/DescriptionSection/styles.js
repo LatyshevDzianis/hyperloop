@@ -1,9 +1,13 @@
 import styled from "styled-components";
 
 const DescriptionSectionWrapper = styled.div`
-  width: 1010px;
+  max-width: 876px;
   margin: 0 auto;
   padding: 50px 66px;
+
+  @media (max-width: 700px) {
+    display: none;
+  }
 `;
 
 const DescriptionHeading = styled.h3`
@@ -16,7 +20,6 @@ const DescriptionHeading = styled.h3`
 `;
 
 const DescriptionContainer = styled.div`
-  width: 878px;
   margin: 0 auto;
 `;
 
@@ -32,8 +35,8 @@ const ListStyled = styled.ul`
 
 const ListItemStyled = styled.li`
   display: inline-block;
-  margin-right: 5px;
-  margin-bottom: 5px;
+  margin-right: 10px;
+  margin-bottom: 10px;
 `;
 
 export {

@@ -45,6 +45,10 @@ const ImagesContainer = styled.div`
   padding: 0 66px;
   margin: 0 auto;
   max-width: 1290px;
+
+  @media (max-width: 1024px) {
+    padding: 0 35px;
+  }
 `;
 
 const ImageStyled = styled.img`

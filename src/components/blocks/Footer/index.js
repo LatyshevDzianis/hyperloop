@@ -34,6 +34,13 @@ export const Footer = () => {
     <footer>
       <FooterWrapper>
         <FooterContainer>
+          <RightBlock>
+            <ComingSoonWrapper>
+              <FooterText>Next conferences</FooterText>
+              <DateRangeIcon />
+              <ComingSoonLink href="#">Coming soon</ComingSoonLink>
+            </ComingSoonWrapper>
+          </RightBlock>
           <LeftBlock>
             <FooterText>
               The awards from design, creativity and innovation on the internet
@@ -63,13 +70,6 @@ export const Footer = () => {
               </FollowList>
             </div>
           </LeftBlock>
-          <RightBlock>
-            <ComingSoonWrapper>
-              <FooterText>Next conferences</FooterText>
-              <DateRangeIcon />
-              <ComingSoonLink href="#">Coming soon</ComingSoonLink>
-            </ComingSoonWrapper>
-          </RightBlock>
         </FooterContainer>
       </FooterWrapper>
     </footer>

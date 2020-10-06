@@ -10,15 +10,22 @@ const FooterContainer = styled.div`
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
+
+  @media (max-width: 1024px) {
+    display: block;
+    padding: 0 35px;
+  }
 `;
 
 const LeftBlock = styled.div`
-  flex: 5;
+  flex: 4;
+  order: 1;
 `;
 
 const RightBlock = styled.div`
   flex: 2;
   text-align: end;
+  order: 2;
 `;
 
 const FooterText = styled.div`
@@ -79,6 +86,10 @@ const ComingSoonWrapper = styled.div`
   align-items: flex-start;
   justify-content: flex-end;
   gap: 5px;
+
+  @media (max-width: 1024px) {
+    justify-content: flex-start;
+  }
 `;
 
 const ComingSoonLink = styled.a`

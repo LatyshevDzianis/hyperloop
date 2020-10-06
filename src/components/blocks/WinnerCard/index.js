@@ -1,5 +1,4 @@
 import React, { useCallback, useState } from "react";
-import FavoriteIcon from "@material-ui/icons/Favorite";
 
 import {
   WinnerCardWrapper,
@@ -12,6 +11,10 @@ import {
   OutlineButtonLike,
   OutlineButtonShare,
   ReplyIconStyled,
+  FavoriteIconStyled,
+  CustomLinkStyled,
+  CountryDateContainer,
+  SmallLightText
 } from "./styles";
 import prevFirst from "../../../assets/images/prevFirst.jpg";
 
@@ -37,7 +40,7 @@ export const WinnerCard = () => {
           <>
             <OutlineButtonCollect>Collect</OutlineButtonCollect>
             <OutlineButtonLike>
-              <FavoriteIcon />
+              <FavoriteIconStyled />
               112
             </OutlineButtonLike>
             <OutlineButtonShare>
@@ -47,7 +50,15 @@ export const WinnerCard = () => {
         )}
       </ImageContainer>
       <ContentContainer>
-        <InfoContainer>Wonderland</InfoContainer>
+        <InfoContainer>
+          <div>
+            <CustomLinkStyled href="#">Wonderland</CustomLinkStyled>
+          </div>
+          <CountryDateContainer>
+            <SmallLightText>From Netherlands</SmallLightText>
+            <SmallLightText>September 28, 2020</SmallLightText>
+          </CountryDateContainer>
+        </InfoContainer>
         <AuthorContainer>BY WONDERLAND</AuthorContainer>
       </ContentContainer>
     </WinnerCardWrapper>

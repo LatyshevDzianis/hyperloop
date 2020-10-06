@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import ReplyIcon from "@material-ui/icons/Reply";
+import FavoriteIcon from "@material-ui/icons/Favorite";
 
 import { OutlineButtonStyled } from "../../controls/OutlineButton/styles";
 import { RoundButtonStyled } from "../../controls/RoundButton/styles";
@@ -82,6 +83,29 @@ const OutlineButtonCollect = styled(OutlineButtonOverride)`
   right: 20px;
 `;
 
+const FavoriteIconStyled = styled(FavoriteIcon)`
+  transform: scale(0.7);
+`;
+
+const CustomLinkStyled = styled.a`
+  text-decoration: none;
+  color: inherit;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 500;
+`;
+
+const CountryDateContainer = styled.div`
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+`;
+
+const SmallLightText = styled.span`
+  font-size: 14px;
+  font-weight: 300;
+`;
+
 export {
   WinnerCardWrapper,
   ImageStyled,
@@ -93,4 +117,8 @@ export {
   OutlineButtonLike,
   OutlineButtonShare,
   ReplyIconStyled,
+  FavoriteIconStyled,
+  CustomLinkStyled,
+  CountryDateContainer,
+  SmallLightText,
 };
